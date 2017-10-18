@@ -1,0 +1,13 @@
+module particlemod
+use vectormod
+implicit none
+real(rk), parameter::e=1.602176462e-19  !elementary charge
+type::particle          !particle has a mass, charge and velocity,position
+   integer::identifier 
+   real(rk)::mass,charge
+   type (vector)::velocity,position
+end type particle
+
+  
+end module particlemod
+

@@ -1,0 +1,25 @@
+
+
+After compiling the program as instructed, run it using (in the directory tuovinen_saana_sc2_project3): 
+
+./a.out E B dt 
+
+in which E is the electric field (units used V/m or equivalently N/C). B is the magnetic field (units used T). Only give one component of each, the direction is chosen in the source code itself. dt is time step that will be used in the simulation. 
+
+If running version 3, plot the trajectory of the particle 1 (the one that gets through if E=12e3 V/m, B=0.10 T) with
+
+src/python plot0.py
+
+and the trajectory of particle 2 with
+
+src/python plot.py
+
+If you want to make your own input file, instructions are in the file HOWTOINPUT. 
+
+Note, that if output file of the same name as in source code already exist, the program can't run properly. Delete or change the name of already existing output file:
+
+mv run/old-file-name run/new-file-name
+
+
+
+

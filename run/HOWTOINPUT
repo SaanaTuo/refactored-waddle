@@ -1,0 +1,18 @@
+On the first line is the number of particles in the file. 
+
+<N>
+
+After that comes the information on all the particles, every piece of information must be on its own line.
+
+<Identifier of particle 1>  (Identifier is of type integer)
+<Mass of particle 1>        (Mass is of type real, units are kilograms)
+<Charge of particle 1>      (Charge is of type integer, meaning how many times its the elementary charge)
+<x component of velocity of particle 1> (real, units m/s)
+<y component of velocity of particle 1>  -"-
+<z component of velocity of particle 1>  -"-
+...
+<z component of velocity of particle N>
+
+
+
+Note that the name of input file is specified in the main program in the src/ directory.

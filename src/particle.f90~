@@ -1,0 +1,16 @@
+module particle
+use 3dvector
+implicit none
+real, parameter(rk)::e=1.602176462e-19  !elementary charge
+type::particle          !particle has a mass, charge and velocity+position
+   integer::identifier 
+   real(rk)::mass,charge
+   type (3dvector)::velocity,position
+end type particle
+
+contains
+ 
+!possible functions, not sure yet if needed 
+  
+end module particle
+

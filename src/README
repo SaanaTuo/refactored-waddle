@@ -1,0 +1,35 @@
+To compile go to the directory particle_trajectory. 
+
+Then compile the modules vectormod, particlemod and functions with gfortran:
+
+gfortran -c vectormod.f90
+gfortran -c particlemod.f90
+gfortran -c functions.f90
+
+Note that the module vectormod is used in both modules particlemod and functions.
+
+if you want to use the first version of velocity filter which doesn't make a .xyz file, compile 
+
+gfortran -c velocity_filter.f90
+
+if you want the .xyz file, compile either 
+
+gfortran -c velocity_filter_v2.f90
+
+or gfortran -c velocity_filter_v3.f90
+
+Difference between these is that the latter doesn't write the number of atoms or comment line.
+
+Finally 
+
+gfortran.o vectormod.o particlemod.o functions.o velocity_filter.o
+
+or
+
+-"- velocity_filter_v2.o
+
+or
+
+-"- velocity_filter_v3.o
+
+Now its ready to run. Instructions on how to can be found on the directory run/

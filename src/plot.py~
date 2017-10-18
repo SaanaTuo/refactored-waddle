@@ -1,0 +1,13 @@
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+import numpy as np
+import matplotlib as mpl
+
+fig=plt.figure()
+ax=fig.gca(projection='3d')
+
+file='trajectory2.xyz'
+x=np.loadtxt(file,usecols=(1,))
+y=np.loadtxt(file,usecols=(2,))
+z=np.loadtxt(file,usecols=(3,))
+
